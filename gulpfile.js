@@ -24,7 +24,6 @@ gulp.task('browser-sync', () => {
 
 gulp.task('js', gulp.series(function () {
 	return gulp.src([
-		'project/js/jquery-3.3.1.min.js', // Add custom js
 		'project/js/common.js', // Always at the end
 	])
 		.pipe(plumber())
